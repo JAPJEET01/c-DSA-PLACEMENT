@@ -8,11 +8,11 @@ void fbi( int n){
     for (int i = 1; i <= n; i++)
     {
         
+
         cout  << tn <<","; 
         tp = tn + ts ; 
         tn =  ts ;
         ts =  tp  ;
-
 
 
     }
