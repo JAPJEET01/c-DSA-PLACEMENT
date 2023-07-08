@@ -1,7 +1,0 @@
-{
-    "code-runner.clearPreviousOutput": true,
-    "files.associations": {
-        "*.cpp": "cpp",
-        "iostream": "cpp"
-    }
-}
