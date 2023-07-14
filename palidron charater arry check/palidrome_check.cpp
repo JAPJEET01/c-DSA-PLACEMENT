@@ -1,11 +1,32 @@
 #include <iostream>
-using namespace std;
-int main()
-{
-char arr[] = "hello" ; 
-cout <<arr <<endl; 
+using namespace std ; 
 
-arr[2] = 'h'  ;
+int main (){
+    int n  ; 
+    cin >> n; 
 
-cout <<arr <<endl ; 
+    char arr[n + 1] ;
+    cin >> arr ;
+
+    bool  check = 1 ;
+    for (int i = 0; i <  n ; i++)
+    {
+        if (arr[i] != arr[n-1-i])
+        {
+            check = 0 ;
+            break;
+        }
+        
+    }
+    
+    if(check ==  true ) {
+        cout<<"WORD IS A PALIDROME " ; 
+
+    }
+    else{
+
+        cout<<"WORD IS NOT A PALIDROME " ; 
+    }
+
+
 }
