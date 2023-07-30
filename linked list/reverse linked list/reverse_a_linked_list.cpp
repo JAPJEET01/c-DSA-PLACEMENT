@@ -39,6 +39,19 @@ void display(node *head){
     }
     cout<<"NULL";
     
+    }
+
+
+node* reverse_recursion(node* head){
+    if (head== NULL || head->next== NULL)
+    {
+        return head;
+
+    }
+    node*newhead= reverse_recursion(head->next);
+    head->next->next= head;
+    head-> next= NULL;
+    return newhead ;
 }
 node* reverse_linked_list(node* &head ){
     node*prev_ptr =  NULL ; 
@@ -72,4 +85,7 @@ display(head);
 cout<<endl;
 node* newhead = reverse_linked_list(head) ;
 display(newhead);
+cout<<endl;
+node* newhead2 = reverse_recursion(head) ;
+display(newhead2);
 }
