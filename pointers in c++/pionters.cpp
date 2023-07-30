@@ -8,7 +8,7 @@ int main (){
     // cout<<a <<endl  ; 
 
 
-    int arr[] = {1,2,3} ; 
+    int arr[] = {1,2,3} ;    
     int *arrptr ; 
     arrptr= arr ; 
 

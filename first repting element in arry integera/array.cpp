@@ -47,15 +47,9 @@ int main (){
 
     cout << "SMALLED REPETED ELEMENT IS  : "<<min <<endl;
     cout<<"SIZE OF REPETED IS  : "<<sizeof(repeted);
+
     }
     
     cout<<arr[arrindex] ;
- 
-    
-            
-        
-
-    
-
 
 }
