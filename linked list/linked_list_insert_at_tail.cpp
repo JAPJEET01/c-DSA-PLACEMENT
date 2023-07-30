@@ -30,7 +30,12 @@ void insert_at_tail(node* &head , int val){
     temp->next = n ; 
     n->next =  NULL; 
 }
-void inset_at_head(node)
+void insert_at_head(node* &head , int val){
+    node * n = new node(val);
+    n ->next =  head ; 
+    head=n;
+
+}
 void display(node* head){
     node*temp =  head ; 
     while (temp!=NULL)
@@ -53,7 +58,7 @@ int main(){
         insert_at_tail(head,in);
         
     }
-    // insert_at_head(head,6);
+    insert_at_head(head,6);
     display(head);
 
 }

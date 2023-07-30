@@ -36,9 +36,6 @@ class node{
 
     }
 
-
-
-
 void display(node*head ){
     node*temp =  head ; 
     while (temp!=NULL)
